@@ -1,0 +1,41 @@
+CODE DOCUMENTATION: 
+Title: HR Analytics: Employee Attrition & Salary Prediction
+ Objective:  
+The project focuses on using machine learning techniques to analyze employee data and 
+support HR decision-making. It aims to:  
+1. Predict the likelihood of employee attrition.  
+2. Forecast future employee salaries.  
+3. Estimate potential financial losses due to attrition.  
+4. Provide actionable recommendations for employee retention. 
+Dataset Used:  
+IBM HR Analytics Employee Attrition & Performance dataset with details of 1,470 
+employees, including job role, satisfaction, salary, years at company, and more. 
+Technologies Used:  
+• Language: Python 3.10  
+• Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, joblib 
+Methodology Overview:  
+1. Data Preprocessing:  
+• Loaded and cleaned the dataset  
+• Encoded categorical variables using Label and One-Hot Encoding  
+• Removed irrelevant features  
+• Split data into training and testing sets (80/20)  
+2. Feature Selection:  
+• Used Recursive Feature Elimination (RFE) with Logistic Regression  
+• Identified top 10 important features for prediction  
+3. Classification Models:  
+• Implemented Logistic Regression, Decision Tree Classifier, and SVM  
+• Models used to predict whether an employee is likely to leave  
+4. Regression Models:  
+• Built salary prediction models using Random Forest, Ridge, Lasso, and SVR  
+• Aimed at forecasting future employee compensation  
+5. Financial Simulation:  
+• Combined attrition probability and predicted salaries  
+• Simulated the financial impact of potential employee exits 
+Business Use:  
+The project helps HR teams identify high-risk employees, plan compensation strategies, 
+and estimate the cost of attrition using data-driven insights. 
+How to Run:  
+1. Install Python and required libraries  
+2. Place the dataset in the working directory  
+3. Run the script: python hr_attrition_analysis.py  
+4. Outputs are saved as CSV files and printed in the console 
